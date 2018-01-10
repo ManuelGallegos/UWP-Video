@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="AppMediaElement.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppMediaElement"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <MediaElement x:Name="myControl" HorizontalAlignment="Center" VerticalAlignment="Top" Height="200"  Width="200" MediaEnded="myControl_Ended" RenderTransformOrigin="1.238,0.542"/>
+        <!--
+        <MediaElement x:Name="myControl" Source="Assets/Sounds/Phone_Ring.wav" AutoPlay="True" HorizontalAlignment="Left" VerticalAlignment="Top" Height="104" Margin="98,56,0,0" Width="255" />
+        -->
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Button Content="Play Video" Width="200" Click="PayVideo_Button_Click"/>
+        <Button Content="Play"  Width="200" Click="Play_Button_Click"/>
+        <Button Content="Pause" Width="200" Click="Pause_Button_Click"/>
+        <Button Content="Stop"  Width="200" Click="Stop_Button_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>
